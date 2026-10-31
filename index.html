@@ -83,6 +83,11 @@
     .step-num{width:38px;height:38px;flex:0 0 38px;border-radius:50%;background:linear-gradient(145deg,#ead9ad,#d5bd83);color:#3b2850;display:grid;place-items:center;font-weight:900}
     .step b{font-size:14px}.step p{margin:4px 0 0;font-size:13px;color:var(--muted)}
     .quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:760px;margin:auto}
+    .bonus-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:760px;margin:auto}
+    .bonus-card{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:19px;font-size:13px;color:var(--muted)}
+    .bonus-card b{color:var(--ink);display:block;margin-bottom:7px}
+    .bonus-image{width:100%;height:170px;object-fit:cover;border-radius:10px;margin-bottom:10px;display:block;background:var(--lavender)}
+    .demo-preview-image{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;border-radius:12px;background:#24243d}
     .quote{background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:19px;font-size:13px;color:var(--muted)}
     .quote b{color:var(--ink);display:block;margin-bottom:7px}.showcase-image{width:100%;height:170px;object-fit:cover;border-radius:10px;margin-bottom:10px;display:block;background:var(--lavender)}
     .plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:790px;margin:auto;align-items:stretch}
@@ -127,6 +132,7 @@
       .hero{padding:38px 14px}.hero-art{width:100%}.hero-image{border-width:3px;border-radius:15px}.stats{gap:0}.stat{padding:0 12px}.stat b{font-size:20px}.stat span{font-size:9px}
       section{padding:48px 15px}.gallery{grid-template-columns:repeat(2,1fr)}.file-grid{grid-template-columns:repeat(2,1fr)}.file .file-thumb{height:100px}.file .file-thumb img{width:100%;height:100%;object-fit:cover}
       .plans{grid-template-columns:1fr;gap:22px}.plan.featured{transform:none}.quotes{grid-template-columns:1fr}.sticky{justify-content:space-between}.sticky .btn{min-width:150px}
+      .bonus-grid{grid-template-columns:1fr}
       .trustbar{gap:10px 18px}.grid{gap:10px}.tile{padding:18px 12px}
     }
   </style>
@@ -209,12 +215,9 @@
     <div class="section-head"><div class="label">DENTRO DO NOSSO ACERVO</div><h2>Encontre os conteúdos com facilidade e práticidade de forma organizada.</h2><p>Uma demonstração ilustrativa de como as categorias digitais podem ficar organizadas.</p></div>
     <div class="demo">
       <div class="demo-top"><b>✝ ACERVO CRISTÃO</b><span>Arquivos digitais</span></div>
-      <div class="file-grid">
-        <div class="file"><div class="file-thumb"><img src="./images/demo-cadernos.webp" alt="Prévia de cadernos" loading="lazy"></div><small>Agendas e planners</small></div>
-        <div class="file"><div class="file-thumb"><img src="./images/demo-devocionais.webp" alt="Prévia de devocionais" loading="lazy"></div><small>Devocionais</small></div>
-        <div class="file"><div class="file-thumb"><img src="./images/demo-capas.webp" alt="Prévia de capas" loading="lazy"></div><small>Capas</small></div>
-        <div class="file"><div class="file-thumb"><img src="./images/demo-cadernos.webp" alt="Prévia de cadernos" loading="lazy"></div><small>Cadernos</small></div>
-      </div>
+      <!-- Troque o arquivo abaixo pela imagem que deseja exibir nesta seção. -->
+      <img class="demo-preview-image" src="./images/organizacao-acervo.png" alt="Imagem de organização do Acervo Cristão" loading="lazy">
+    </div>
     </div>
     <div style="text-align:center;margin-top:25px"><a class="btn" href="#planos">QUERO MEU ACESSO →</a></div>
   </section>
@@ -237,6 +240,18 @@
       <div class="quote"><img class="showcase-image" src="./images/projeto-real-1.webp" alt="Foto de produto criado com o acervo" loading="lazy"><b>Seu projeto aqui</b>Substitua pela foto real de uma agenda, capa ou devocional produzido com o acervo.</div>
       <div class="quote"><img class="showcase-image" src="./images/projeto-real-2.webp" alt="Foto de material personalizado" loading="lazy"><b>Mostre suas criações</b>Use imagens próprias e autorizadas para apresentar exemplos reais do material.</div>
 
+    </div>
+  </section>
+
+
+  <section>
+    <div class="section-head"><div class="label">PRESENTES ESPECIAIS PARA VOCÊ</div><h2>Bônus que acompanham seu acervo</h2><p>Além dos materiais principais, você também recebe conteúdos extras para ampliar suas possibilidades de criação.</p></div>
+    <div class="bonus-grid">
+      <div class="bonus-card"><img class="bonus-image" src="./images/bonus-01.webp" alt="Kit Completo para Congressos e Encontros de Mulheres" loading="lazy"><b>🎁 Bônus 01: Kit Completo para Congressos e Encontros de Mulheres</b>Materiais para preparar e personalizar itens para congressos, encontros e programações especiais.</div>
+      <div class="bonus-card"><img class="bonus-image" src="./images/bonus-02.webp" alt="Kit de Divulgação para Eventos da Igreja" loading="lazy"><b>🎁 Bônus 02: Kit de Divulgação para Eventos da Igreja</b>Artes e materiais de apoio para divulgar eventos, reuniões e atividades da igreja.</div>
+      <div class="bonus-card"><img class="bonus-image" src="./images/bonus-03.webp" alt="Pack de 300 Artes Cristãs Editáveis" loading="lazy"><b>🎁 Bônus 03: Pack de 300 Artes Cristãs Editáveis</b>Uma coleção de artes cristãs para personalizar e utilizar em diferentes projetos.</div>
+      <div class="bonus-card"><img class="bonus-image" src="./images/bonus-04.webp" alt="Biblioteca de Frases e Versículos para Design" loading="lazy"><b>🎁 Bônus 04: Biblioteca de Frases e Versículos para Design</b>Frases e versículos para servir de inspiração na criação de materiais e peças visuais.</div>
+      <div class="bonus-card"><img class="bonus-image" src="./images/bonus-05.webp" alt="Kit de Miolos Extras para Agendas e Planners" loading="lazy"><b>🎁 Bônus 05: Kit de Miolos Extras para Agendas e Planners</b>Páginas internas extras para complementar agendas e planners personalizados.</div>
     </div>
   </section>
 
